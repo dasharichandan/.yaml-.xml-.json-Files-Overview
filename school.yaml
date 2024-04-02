@@ -1,0 +1,8 @@
+---
+School:
+- sname: GIET
+  principal: Someone
+  Students:
+  - rno: 227
+    name: Chadnan
+    mark: 88

@@ -1,0 +1,94 @@
+student: !!seq
+ - marks
+ - name
+ - roll_no
+
+#also like in list
+cities: [newdelhi,mumbai]
+
+#some of the keys of the seq will be empty
+#sparce seq
+sparce seq:
+ - hey
+ - how
+ -
+ - Null
+ - sup
+
+#nested Sequene
+ -
+  - mango
+  - apple
+  - grapes
+-
+ - marks
+ - roll num
+ - date
+
+#key: value pairs are called maps
+!!map
+
+# nested mappings: map within an map
+name: Chandan
+  role: 227
+  age: 78
+  job: student
+
+#same as
+name: Chandan 
+role: {age: 78, job: student}
+
+#pairs: keys may have dupliate values
+#!!pairs
+
+pair example: !!pairs
+- job: student-
+- job: Devops Engineer
+
+#same as
+pair example: !!pairs [job: student, job: Devops Engineer]
+#array
+
+#!!set will allow you to have unique values 
+names: !!set
+ ?Chandan
+ ?Aryan
+ ?Rohit
+
+#dictionary !!omap
+People: !!omap
+ - Chandan:
+    name: Hari chandan Das
+    age: 20
+    height: 5.8 
+- Aryan:
+    name: Aryan
+    age: 21
+    height: 5.5
+
+# reusing some properties usng anchors  
+likings: &likes
+ fav book: ab
+ dilikes: Laziness 
+person:
+ name: john
+ <<: *likes
+person1:
+ name: Rahul
+ <<: *likes
+ dilikes: sleeping
+
+#person1 be like 
+
+person1:
+ name: Rahul
+ fav book: ab
+ dilikes: sleeping
+
+
+
+
+
+
+
+    

@@ -1,0 +1,48 @@
+#string variables
+myself: "Chandan"
+fruit: "Apple"
+job: "SDE"
+
+#it will show error
+bio: hey i am chandan currently serving as cloud lead 
+at gdsc giet university.
+
+#write in a single line in multiple lines
+message: >
+This will
+treat as 
+single line 
+altough i write it 
+in multiple line.
+
+#same as (upper one)
+message: This wil treat as single line altough i write it in multiple line.
+
+number: 5437
+marks: 98.76
+booleanValue: !!bool No # n, N, flase,False, FALSE
+#same for true ->yes,y,Y
+
+#specify the type
+zero: !!int 0
+positiveNum: !!int 45 
+negativeNum: !!int -45
+binaryNum: !!int 0b11001
+octalNum: !!int 06574
+hexa: !!int 0x45
+commaValue: !!int +540_000 # 540,000
+expnential numbers: 6.023E56
+
+#floating point numbers
+marks: !!float 56.89
+infinite: !!float .inf
+not a num: .nan
+
+#null
+surname: !!null Null # or null NULL ~
+~: this is null key
+
+#dates and times
+date: !!timestamp 2024-01-03
+india time: 2003-07-28T06:07:20 +5:30
+no time zone: !!timestamp 2003-07-28T06:07:20 
